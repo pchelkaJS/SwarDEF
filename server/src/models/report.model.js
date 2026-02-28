@@ -1,6 +1,7 @@
 import mongoose from "mongoose"
+import dotenv from "dotenv"
 
-mongoose.connect("mongodb://localhost:27017/swarDEF")
+mongoose.connect(process.env.DB_CONNECTION_STRING)
   .then(() => console.log('Подключено к базе swarDEF'))
   .catch(err => console.error('Ошибка подключения:', err));
 
