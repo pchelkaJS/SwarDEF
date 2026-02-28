@@ -1,0 +1,12 @@
+:root{
+    --padding: 0.5em;
+    --borderRadius: 0.25em;
+    --textColor: rgb(35, 35, 35);
+    --whiteColor: whitesmoke;
+    --border: 1px solid rgba(128, 128, 128, 0.5);
+    --shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.5);
+    --blueColor: dodgerblue;
+    --greyColor: lightgrey;
+    --transparentTextColor: rgba(35, 35, 35, 0.5);
+    --fontSized: 2em;
+}

@@ -1,0 +1,11 @@
+.warn{
+    font-size: 15px;
+    color: red;
+}
+textarea{
+    background-color: gray;
+}
+.status{
+    color: green;
+    font-size: 15px;
+}

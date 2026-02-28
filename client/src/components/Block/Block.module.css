@@ -1,0 +1,17 @@
+@import '../../variables.css';
+
+.block{
+    border: var(--border);
+    padding: var(--padding);
+    border-radius: var(--borderRadius);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: var(--padding);
+    width: 50%;
+}
+.block>img{
+    border-radius: var(--borderRadius);
+    width: 100%;
+}

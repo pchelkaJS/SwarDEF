@@ -1,0 +1,16 @@
+@import '../../variables.css';
+
+.card{
+    width: 100%;
+    padding: var(--padding);
+    gap: var(--padding);
+}
+.avatar{
+    height: var(--fontSized);
+    border-radius: var(--borderRadius);
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

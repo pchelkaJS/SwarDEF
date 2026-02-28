@@ -1,0 +1,10 @@
+@import '../../variables.css';
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: var(--padding);
+    gap: var(--padding);
+}
