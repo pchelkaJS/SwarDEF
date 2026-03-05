@@ -18,9 +18,9 @@
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "express-rate-limit": "^7.5.0",
+    "firebase": "^12.10.0",
     "hash.js": "^1.1.7",
     "helmet": "^8.1.0",
-    "mongoose": "^8.13.2",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
