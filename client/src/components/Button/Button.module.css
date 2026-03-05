@@ -1,3 +1,6 @@
 .button{
     position: relative;
+    background-color: skyblue;
+    width: 100px;
+    box-shadow: 2px 2px 2px grey;
 }

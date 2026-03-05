@@ -10,4 +10,5 @@
     border-radius: var(--borderRadius);
     gap: var(--padding);
     border: var(--border);
+    box-shadow: 2px 2px 2px grey;
 }

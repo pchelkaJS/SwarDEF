@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
-@import './variables.css';
+@font-face {
+  font-family: 'Mojangles';
+  src: url('./fonts/mojangles.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Epilogue';
+  font-family: 'Mojangles', sans-serif;
   text-align: center;
   border: 0px solid transparent;
   outline: none;
@@ -39,10 +43,7 @@ button{
   background-color: var(--greyColor);
   border-radius: var(--borderRadius);
   padding: var(--padding);
-}
-button:hover{
-  background-color: var(--blueColor);
-  color: var(--whiteColor);
+  font-family: 'Mojangles', sans-serif;
 }
 button.grey-bg:hover>*{
   color: var(--whiteColor);
@@ -58,15 +59,16 @@ a{
   height: 100%;
 }
 ::placeholder{
-  color: var(--transparentTextColor);
+  color: white;
 }
-input{
+input, textarea{
   width: 100%;
   text-align: start;
   display: flex;
   justify-content: start;
   align-items: center;
-  background-color: var(--greyColor);
+  background-color: skyblue;
   border-radius: var(--borderRadius);
   padding: var(--padding);
+  box-shadow: 2px 2px 2px grey;
 }

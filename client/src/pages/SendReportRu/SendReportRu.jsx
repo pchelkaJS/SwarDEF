@@ -3,14 +3,14 @@ import Input from '../../components/Input/Input'
 import Button from '../../components/Button/Button'
 import { useState } from 'react'
 import axios from 'axios'
-import styles from './SendReport.module.css'
+import styles from './SendReportRu.module.css'
 function SendReport() {
     const [warn, setWarn] = useState('')
     const [status, setStatus] = useState('')
     const registerHandler = async e => {
         e.preventDefault()
         if (!e.target.parentNode.children[1].value && !e.target.parentNode.children[2].value) {
-            setWarn("All fields are required")
+            setWarn("Не все поля заполнены")
         }
         else {
             setStatus('')
@@ -22,10 +22,10 @@ function SendReport() {
                 text
             })
             if (statuss.data.status == "success"){
-                setStatus("Sucess!")
+                setStatus("Успешно!")
             }
             else{
-                setWarn(`An error appeared while sending...`)
+                setWarn(`Произошла ошибка...`)
             }
 
         }
@@ -34,10 +34,10 @@ function SendReport() {
 
     return (
         <Form>
-            <h1>Send a report</h1>
-            <Input type='text' placeholder='Cheater' />
-            <textarea name="message" rows="5" cols="30" placeholder='Report text' />
-            <Button onClick = {registerHandler}>Send</Button>
+            <h1>Отправить жалобу</h1>
+            <Input type='text' placeholder='Нарушитель' />
+            <textarea name="message" rows="5" cols="30" placeholder='Текст жалобы' />
+            <Button onClick = {registerHandler}>Отправить</Button>
             <p className={styles[`warn`]}>{warn}</p>
             <p className = {styles[`status`]}>{status}</p>
         </Form>

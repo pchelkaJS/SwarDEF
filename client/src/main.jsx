@@ -5,6 +5,9 @@ import MainLayout from './layout/MainLayout/MainLayout'
 import Feed from './pages/Feed/Feed'
 import './index.css'
 import SendReport from './pages/SendReport/SendReport'
+import MainLayoutRus from './layout/MainLayoutRus/MainLayoutRus'
+import FeedRu from './pages/FeedRu/FeedRu'
+import SendReportRu from './pages/SendReportRu/SendReportRu'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +21,20 @@ const router = createBrowserRouter([
       {
         path: '/sendReport',
         element: <SendReport />
+      }
+    ]
+  },
+  {
+    path: '/ru',
+    element: <MainLayoutRus />,
+    children:[
+      {
+        path: '/ru',
+        element: <FeedRu />
+      },
+      {
+        path: '/ru/sendReport',
+        element: <SendReportRu />
       }
     ]
   }

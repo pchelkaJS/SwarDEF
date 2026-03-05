@@ -7,10 +7,12 @@
     padding: var(--padding);
     border-radius: var(--borderRadius);
     position: relative;
+    transition: 1s;
+    box-shadow: 2px 2px 2px grey;
+    margin-bottom: 10px;
 }
 .button:hover{
-    background-color: var(--blueColor);
-    color: var(--whiteColor);
+    background: rgba(255, 255, 255, 1);
 }
 .button:has(.active)::after{
     content: '';
